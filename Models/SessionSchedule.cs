@@ -11,7 +11,7 @@ namespace ACMS.DAL.Models
         public Guid TeacherId { get; set; }
         public Guid ClassId { get; set; }
         public Guid StudentId { get; set; }
-        public TimeSpan? Time { get; set; }
+        public DateTime? Time { get; set; }
         public string Day { get; set; }
         public string Remarks { get; set; }
 

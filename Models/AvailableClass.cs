@@ -14,7 +14,7 @@ namespace ACMS.DAL.Models
         //    RegistredClasses = new HashSet<RegistredClass>();
         //    SessionSchedules = new HashSet<SessionSchedule>();
         //}
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
         public Guid ClassId { get; set; }
         public string ClassName { get; set; }
         public Guid TeacherId { get; set; }
