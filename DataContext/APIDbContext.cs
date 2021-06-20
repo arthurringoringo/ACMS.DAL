@@ -63,7 +63,70 @@ namespace ACMS.DAL.DataContext
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        //public override int SaveChanges()
+        //{
+        //    ChangeTracker.DetectChanges();
 
+        //    foreach (var item in ChangeTracker.Entries<AvailableClass>().Where(e => e.State
+        //      == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+        //    }
+
+        //    foreach (var item in ChangeTracker.Entries<ClassCategory>().Where(e => e.State
+        //      == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+
+        //    }
+        //    foreach (var item in ChangeTracker.Entries<ClassReport>().Where(e => e.State
+        //    == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+
+        //    }
+        //    foreach (var item in ChangeTracker.Entries<PaidSession>().Where(e => e.State
+        //    == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+
+        //    }
+        //    foreach (var item in ChangeTracker.Entries<PaymentMethod>().Where(e => e.State
+        //    == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+
+        //    }
+        //    foreach (var item in ChangeTracker.Entries<RegistredClass>().Where(e => e.State
+        //    == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+
+        //    }
+        //    foreach (var item in ChangeTracker.Entries<SessionSchedule>().Where(e => e.State
+        //    == EntityState.Deleted))
+        //    {
+        //        item.State = EntityState.Modified;
+        //        item.CurrentValues["Deleted"] = true;
+        //        item.CurrentValues["DeletedOn"] = DateTime.Now;
+
+        //    }
+
+
+        //    return base.SaveChanges();
+        //}
         public APIDbContext NewInstance()
         {
             var dbContextOptionsBuilder = new DbContextOptionsBuilder<APIDbContext>();
